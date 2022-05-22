@@ -2,26 +2,25 @@ import React from "react";
 
 export default function Header({ approvers, quorum }) {
   return (
-    <div class="card border-primary mt-4">
-      <div class="card-header">Wallet Info</div>
-      <div class="card-body">
+    <div className="card border-info my-4">
+      <div className="card-header">Wallet Info</div>
+      <div className="card-body">
         <ul>
           <li>
-            <h4 class="card-title">Approvers</h4>
-            <ol class="list-group">
+            <h4 className="card-title">Approvers</h4>
+            <ul className="list-group">
               {approvers.map((approver) => (
                 <li
                   key={approver}
-                  class="list-group-item d-flex justify-content-between align-items-center"
+                  className="list-group-item"
                 >
                   {approver}
                 </li>
               ))}
-            </ol>
+            </ul>
           </li>
           <li>
-            <h4 class="card-title">Quorum</h4>
-            {quorum}
+            <h4 className="card-title my-3">Quorum: {quorum}</h4>
           </li>
         </ul>
       </div>
