@@ -4,7 +4,7 @@
 
 [**Netlify Link**](https://emark-multisig-wallet.netlify.app/)
 
-- Metamask must be installed to be able to open application.
+- Metamask must be installed and connected to Kovan network to be able to open the application.
 - As your address is not defined as an approver while the contract is being deployed, you cannot create and approve a transfer.
 
 ## Local Run
