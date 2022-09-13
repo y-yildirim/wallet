@@ -58,6 +58,11 @@ module.exports = {
       provider: () => new HDWalletProvider(MNEMONIC, KOVAN_URL, 0, 10),
       network_id: 42,
     },
+    
+    goerli: {
+      provider: () => new HDWalletProvider(MNEMONIC, GOERLI_URL, 0, 10),
+      network_id: 5,
+    },
 
     // Another network with more advanced options...
     // advanced: {
